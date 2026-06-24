@@ -10,7 +10,7 @@ namespace projectucp1
 {
     public partial class FormProduk : Form
     {
-        private readonly string con = "Data Source=LAPTOP-1SH0I1SH\\NANA;Initial Catalog=TOKO_ROTIku;Integrated Security=True";
+        private readonly string con = DAL.GetConnectionString();
         private readonly bool readOnly;
         private readonly string username;
         private readonly string role;

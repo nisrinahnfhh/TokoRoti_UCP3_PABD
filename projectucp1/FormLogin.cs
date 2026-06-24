@@ -7,7 +7,7 @@ namespace projectucp1
 {
     public partial class FormLogin : Form
     {
-        private readonly string con = "Data Source=LAPTOP-1SH0I1SH\\NANA;Initial Catalog=TOKO_ROTIku;Integrated Security=True";
+        private readonly string con = DAL.GetConnectionString();
 
         public FormLogin()
         {

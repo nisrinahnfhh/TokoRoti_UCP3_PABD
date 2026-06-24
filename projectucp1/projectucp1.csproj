@@ -74,6 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL.cs" />
     <Compile Include="FormKasirManagement.cs">
       <SubType>Form</SubType>
     </Compile>
