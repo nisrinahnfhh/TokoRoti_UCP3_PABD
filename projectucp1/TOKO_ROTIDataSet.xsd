@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TOKO_ROTIDataSet" targetNamespace="http://tempuri.org/TOKO_ROTIDataSet.xsd" xmlns:mstns="http://tempuri.org/TOKO_ROTIDataSet.xsd" xmlns="http://tempuri.org/TOKO_ROTIDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TOKO_ROTI_DataSource" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TOKO_ROTI_DataSource (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.projectucp1.Properties.Settings.GlobalReference.Default.TOKO_ROTI_DataSource" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_kasirTableAdapter" GeneratorDataComponentClassName="vw_kasirTableAdapter" Name="vw_kasir" UserDataComponentName="vw_kasirTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TOKO_ROTI_DataSource (Settings)" DbObjectName="TOKO_ROTI.dbo.vw_kasir" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT kasirID, loginID, username, role FROM dbo.vw_kasir</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="kasirID" DataSetColumn="kasirID" />
+              <Mapping SourceColumn="loginID" DataSetColumn="loginID" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="role" DataSetColumn="role" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_produkTableAdapter" GeneratorDataComponentClassName="vw_produkTableAdapter" Name="vw_produk" UserDataComponentName="vw_produkTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TOKO_ROTI_DataSource (Settings)" DbObjectName="TOKO_ROTI.dbo.vw_produk" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT produkID, namaProduk, harga, stok FROM dbo.vw_produk</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="produkID" DataSetColumn="produkID" />
+              <Mapping SourceColumn="namaProduk" DataSetColumn="namaProduk" />
+              <Mapping SourceColumn="harga" DataSetColumn="harga" />
+              <Mapping SourceColumn="stok" DataSetColumn="stok" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_produk_tersediaTableAdapter" GeneratorDataComponentClassName="vw_produk_tersediaTableAdapter" Name="vw_produk_tersedia" UserDataComponentName="vw_produk_tersediaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TOKO_ROTI_DataSource (Settings)" DbObjectName="TOKO_ROTI.dbo.vw_produk_tersedia" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT produkID, namaProduk, harga, stok FROM dbo.vw_produk_tersedia</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="produkID" DataSetColumn="produkID" />
+              <Mapping SourceColumn="namaProduk" DataSetColumn="namaProduk" />
+              <Mapping SourceColumn="harga" DataSetColumn="harga" />
+              <Mapping SourceColumn="stok" DataSetColumn="stok" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_transaksi_detailTableAdapter" GeneratorDataComponentClassName="vw_transaksi_detailTableAdapter" Name="vw_transaksi_detail" UserDataComponentName="vw_transaksi_detailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TOKO_ROTI_DataSource (Settings)" DbObjectName="TOKO_ROTI.dbo.vw_transaksi_detail" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NomorTransaksi, Tanggal, TotalTransaksi, NamaProduk, Jumlah, HargaSatuan, Subtotal FROM dbo.vw_transaksi_detail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NomorTransaksi" DataSetColumn="NomorTransaksi" />
+              <Mapping SourceColumn="Tanggal" DataSetColumn="Tanggal" />
+              <Mapping SourceColumn="TotalTransaksi" DataSetColumn="TotalTransaksi" />
+              <Mapping SourceColumn="NamaProduk" DataSetColumn="NamaProduk" />
+              <Mapping SourceColumn="Jumlah" DataSetColumn="Jumlah" />
+              <Mapping SourceColumn="HargaSatuan" DataSetColumn="HargaSatuan" />
+              <Mapping SourceColumn="Subtotal" DataSetColumn="Subtotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TOKO_ROTIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="TOKO_ROTIDataSet" msprop:Generator_DataSetName="TOKO_ROTIDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_kasir" msprop:Generator_RowEvHandlerName="vw_kasirRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_kasirRowDeleted" msprop:Generator_RowDeletingName="vw_kasirRowDeleting" msprop:Generator_RowEvArgName="vw_kasirRowChangeEvent" msprop:Generator_TablePropName="vw_kasir" msprop:Generator_RowChangedName="vw_kasirRowChanged" msprop:Generator_RowChangingName="vw_kasirRowChanging" msprop:Generator_TableClassName="vw_kasirDataTable" msprop:Generator_RowClassName="vw_kasirRow" msprop:Generator_TableVarName="tablevw_kasir" msprop:Generator_UserTableName="vw_kasir">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kasirID" msprop:Generator_ColumnPropNameInRow="kasirID" msprop:Generator_ColumnPropNameInTable="kasirIDColumn" msprop:Generator_ColumnVarNameInTable="columnkasirID" msprop:Generator_UserColumnName="kasirID" type="xs:int" />
+              <xs:element name="loginID" msprop:Generator_ColumnPropNameInRow="loginID" msprop:Generator_ColumnPropNameInTable="loginIDColumn" msprop:Generator_ColumnVarNameInTable="columnloginID" msprop:Generator_UserColumnName="loginID" type="xs:int" />
+              <xs:element name="username" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_UserColumnName="username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="role" msprop:Generator_ColumnPropNameInRow="role" msprop:Generator_ColumnPropNameInTable="roleColumn" msprop:Generator_ColumnVarNameInTable="columnrole" msprop:Generator_UserColumnName="role">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_produk" msprop:Generator_RowEvHandlerName="vw_produkRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_produkRowDeleted" msprop:Generator_RowDeletingName="vw_produkRowDeleting" msprop:Generator_RowEvArgName="vw_produkRowChangeEvent" msprop:Generator_TablePropName="vw_produk" msprop:Generator_RowChangedName="vw_produkRowChanged" msprop:Generator_RowChangingName="vw_produkRowChanging" msprop:Generator_TableClassName="vw_produkDataTable" msprop:Generator_RowClassName="vw_produkRow" msprop:Generator_TableVarName="tablevw_produk" msprop:Generator_UserTableName="vw_produk">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="produkID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="produkID" msprop:Generator_ColumnPropNameInTable="produkIDColumn" msprop:Generator_ColumnVarNameInTable="columnprodukID" msprop:Generator_UserColumnName="produkID" type="xs:int" />
+              <xs:element name="namaProduk" msprop:Generator_ColumnPropNameInRow="namaProduk" msprop:Generator_ColumnPropNameInTable="namaProdukColumn" msprop:Generator_ColumnVarNameInTable="columnnamaProduk" msprop:Generator_UserColumnName="namaProduk">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="harga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_UserColumnName="harga" type="xs:decimal" />
+              <xs:element name="stok" msprop:Generator_ColumnPropNameInRow="stok" msprop:Generator_ColumnPropNameInTable="stokColumn" msprop:Generator_ColumnVarNameInTable="columnstok" msprop:Generator_UserColumnName="stok" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_produk_tersedia" msprop:Generator_RowEvHandlerName="vw_produk_tersediaRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_produk_tersediaRowDeleted" msprop:Generator_RowDeletingName="vw_produk_tersediaRowDeleting" msprop:Generator_RowEvArgName="vw_produk_tersediaRowChangeEvent" msprop:Generator_TablePropName="vw_produk_tersedia" msprop:Generator_RowChangedName="vw_produk_tersediaRowChanged" msprop:Generator_RowChangingName="vw_produk_tersediaRowChanging" msprop:Generator_TableClassName="vw_produk_tersediaDataTable" msprop:Generator_RowClassName="vw_produk_tersediaRow" msprop:Generator_TableVarName="tablevw_produk_tersedia" msprop:Generator_UserTableName="vw_produk_tersedia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="produkID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="produkID" msprop:Generator_ColumnPropNameInTable="produkIDColumn" msprop:Generator_ColumnVarNameInTable="columnprodukID" msprop:Generator_UserColumnName="produkID" type="xs:int" />
+              <xs:element name="namaProduk" msprop:Generator_ColumnPropNameInRow="namaProduk" msprop:Generator_ColumnPropNameInTable="namaProdukColumn" msprop:Generator_ColumnVarNameInTable="columnnamaProduk" msprop:Generator_UserColumnName="namaProduk">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="harga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_UserColumnName="harga" type="xs:decimal" />
+              <xs:element name="stok" msprop:Generator_ColumnPropNameInRow="stok" msprop:Generator_ColumnPropNameInTable="stokColumn" msprop:Generator_ColumnVarNameInTable="columnstok" msprop:Generator_UserColumnName="stok" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_transaksi_detail" msprop:Generator_RowEvHandlerName="vw_transaksi_detailRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_transaksi_detailRowDeleted" msprop:Generator_RowDeletingName="vw_transaksi_detailRowDeleting" msprop:Generator_RowEvArgName="vw_transaksi_detailRowChangeEvent" msprop:Generator_TablePropName="vw_transaksi_detail" msprop:Generator_RowChangedName="vw_transaksi_detailRowChanged" msprop:Generator_RowChangingName="vw_transaksi_detailRowChanging" msprop:Generator_TableClassName="vw_transaksi_detailDataTable" msprop:Generator_RowClassName="vw_transaksi_detailRow" msprop:Generator_TableVarName="tablevw_transaksi_detail" msprop:Generator_UserTableName="vw_transaksi_detail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NomorTransaksi" msprop:Generator_ColumnPropNameInRow="NomorTransaksi" msprop:Generator_ColumnPropNameInTable="NomorTransaksiColumn" msprop:Generator_ColumnVarNameInTable="columnNomorTransaksi" msprop:Generator_UserColumnName="NomorTransaksi" type="xs:int" />
+              <xs:element name="Tanggal" msprop:Generator_ColumnPropNameInRow="Tanggal" msprop:Generator_ColumnPropNameInTable="TanggalColumn" msprop:Generator_ColumnVarNameInTable="columnTanggal" msprop:Generator_UserColumnName="Tanggal" type="xs:dateTime" />
+              <xs:element name="TotalTransaksi" msprop:Generator_ColumnPropNameInRow="TotalTransaksi" msprop:Generator_ColumnPropNameInTable="TotalTransaksiColumn" msprop:Generator_ColumnVarNameInTable="columnTotalTransaksi" msprop:Generator_UserColumnName="TotalTransaksi" type="xs:decimal" />
+              <xs:element name="NamaProduk" msprop:Generator_ColumnPropNameInRow="NamaProduk" msprop:Generator_ColumnPropNameInTable="NamaProdukColumn" msprop:Generator_ColumnVarNameInTable="columnNamaProduk" msprop:Generator_UserColumnName="NamaProduk">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Jumlah" msprop:Generator_ColumnPropNameInRow="Jumlah" msprop:Generator_ColumnPropNameInTable="JumlahColumn" msprop:Generator_ColumnVarNameInTable="columnJumlah" msprop:Generator_UserColumnName="Jumlah" type="xs:int" />
+              <xs:element name="HargaSatuan" msprop:Generator_ColumnPropNameInRow="HargaSatuan" msprop:Generator_ColumnPropNameInTable="HargaSatuanColumn" msprop:Generator_ColumnVarNameInTable="columnHargaSatuan" msprop:Generator_UserColumnName="HargaSatuan" type="xs:decimal" />
+              <xs:element name="Subtotal" msprop:Generator_ColumnPropNameInRow="Subtotal" msprop:Generator_ColumnPropNameInTable="SubtotalColumn" msprop:Generator_ColumnVarNameInTable="columnSubtotal" msprop:Generator_UserColumnName="Subtotal" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_kasir" />
+      <xs:field xpath="mstns:kasirID" />
+      <xs:field xpath="mstns:loginID" />
+    </xs:unique>
+    <xs:unique name="vw_produk_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_produk" />
+      <xs:field xpath="mstns:produkID" />
+    </xs:unique>
+    <xs:unique name="vw_produk_tersedia_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_produk_tersedia" />
+      <xs:field xpath="mstns:produkID" />
+    </xs:unique>
+    <xs:unique name="vw_transaksi_detail_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_transaksi_detail" />
+      <xs:field xpath="mstns:NomorTransaksi" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
